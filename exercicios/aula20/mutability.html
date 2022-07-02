@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+
+<script>
+
+   let objetoA = {
+    idade: 29
+   };
+
+   objetoB = objetoA;
+
+   let objetoC = {
+    idade: 29
+   }
+
+   console.log(objetoA == objetoB);
+   console.log(objetoA == objetoC);
+
+   objetoB.idade = 30
+
+   console.log(objetoA == objetoB)
+   console.log(objetoA)
+
+   objetoA.idade = 40
+
+   console.log(objetoA == objetoB)
+   console.log(objetoA)
+   console.log(objetoA == objetoC)
+   console.log(objetoA != objetoC)
+   console.log(objetoA > objetoC)
+
+</script>
+</html>
