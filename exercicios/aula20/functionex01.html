@@ -26,8 +26,31 @@
   suaIdade(30)
   suaIdade(31)
 
-  function soma (a, b)
+  function soma (a, b){
+    return a + b
+  }
 
+  console.log(soma(5, 5))
+
+  function numAleatorio(num){
+    return Math.floor(Math.random() * num) + 1;
+  }
+
+  console.log (numAleatorio(20))
+  console.log (numAleatorio(29))
+  console.log (numAleatorio(54))
+  console.log (numAleatorio(80))
+
+  function suaIdade(idade){
+    if(idade >= 18){
+      console.log("Vocé já pode se matricular na auto escola.")
+    }else {
+      console.log("Vocé ainda não pode se matricular na auto escola")
+
+    }
+  }
+
+  suaIdade(18)
 
 </script>
 </html>
