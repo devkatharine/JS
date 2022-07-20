@@ -1,24 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Array</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array</title>
+  </head>
+  <body></body>
 
-<script>
+  <script>
+    let num = [1, 13, 29, 31]
+    let nomes = ['Lucca', 'Kakau', 'Lucas']
+    let bool = [true, false, true]
 
-  let num = [1, 13, 29, 31]
-  let nomes = ['Lucca', 'Kakau', 'Lucas']
-  let bool = [true, false, true]
+    console.log(num[2])
+    console.log(nomes[2])
+    console.log(bool[1])
 
-  console.log(num[2])
-  console.log(nomes[2])
-  console.log(bool[1])
+    let numeros = [1, 2, 3, 4, 5, 6]
 
-</script>
+    console.log(numeros.length)
+
+    let marca = 'colcci'
+    console.log(marca.toLocaleUpperCase())
+
+    let pessoa = {
+      nome: 'Katharine',
+      profissao: 'Developer',
+      idade: 29
+    }
+
+    console.log(pessoa.profissao)
+    console.log(pessoa.idade)
+    console.log(pessoa.nome)
+
+    delete pessoa.nome
+    console.log(pessoa.nome)
+
+    pessoa.nome = 'Lucas'
+    console.log(pessoa.nome)
+
+    let pessoa2 = {
+      cor: 'rosa'
+    }
+    Object.assign(pessoa2, pessoa)
+
+    console.log(pessoa2)
+
+    console.log(pessoa == pessoa2)
+
+    let pessoa3 = pessoa
+    console.log(pessoa3)
+    console.log(pessoa == pessoa3)
+
+    let numerosNovos = [1, 13, 29, 54, 62, 80, 100];
+
+    for(let i = 0; i <= numerosNovos.length; i++){
+      console.log([i]);
+
+
+    }
+
+
+
+    let maisNomes = ["Katharine", "Lucas", "Lucca", "Maria"]
+    for(let i = 0; i <= maisNomes.length; i++){
+      console.log(maisNomes[2])
+    }
+
+    let carro = ["seminovo", "azul", "automatico", "suv"];
+    let removido = carro.push();
+
+    console.log(carro);
+    console.log(removido)
+
+    
+
+
+   
+  </script>
 </html>
