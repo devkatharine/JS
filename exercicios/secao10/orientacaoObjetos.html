@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orientação a Objetos</title>
+  </head>
+  <body></body>
+
+  <script>
+    const pessoa = {
+      nome: 'ND',
+      idade: 29,
+      fala: function () {
+        console.log('bla bla')
+      },
+      setNome: function (nome) {
+        this.nome = nome
+      },
+      getNome: function () {
+        return 'O nome é' + this.nome
+      }
+    }
+    console.log(pessoa.nome)
+    pessoa.setNome('Fernanda')
+    console.log(pessoa.nome)
+    pessoa.getNome()
+  </script>
+</html>
