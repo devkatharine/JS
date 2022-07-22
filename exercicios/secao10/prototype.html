@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+
+<script>
+
+  let cachorro = {
+    patas: 4,
+    raca: "ND",
+    latir: function(){
+      console.log("au au")
+    }
+  }
+
+  let pitbull = Object.create(cachorro);
+
+  pitbull.latir()
+
+  pitbull.raca = "Pitbull"
+
+  console.log(pitbull.raca);
+  console.log(cachorro.raca)
+
+  function criarCarro(marca){
+    let carro = Object.create({});
+    carro.marca = marca;
+    return carro;
+  }
+
+  let fiat = criarCarro("Fiat");
+
+  console.log(fiat.marca);
+
+  function Pessoa(nome){
+    this.nome = nome;
+  }
+  let carla = new Pessoa ("Carla");
+
+  console.log(carla.nome)
+
+
+</script>
+</html>
